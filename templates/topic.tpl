@@ -6,7 +6,6 @@
 		<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
-
 <div class="row">
 	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<div class="topic-header">
