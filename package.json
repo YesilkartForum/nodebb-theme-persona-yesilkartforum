@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-persona-yesilkartforum",
   "version": "10.2.68",
   "nbbpm": {
     "compatibility": "^1.15.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "Modified NodeBB Persona theme for Yesilkart Forum",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "https://github.com/Yesilkart-Forum/nodebb-theme-persona-yesilkartforum/edit/master/package.json"
   },
   "keywords": [
     "nodebb",
