@@ -5,7 +5,7 @@
 	{{{end}}}
 </div>
 <div class="unread">
-	<div class="btn-toolbar">
+	<div class="topic-list-header btn-toolbar">
 		<div class="pull-left">
 			<!-- IMPORT partials/buttons/newTopic.tpl -->
 			<a href="{config.relative_path}/{selectedFilter.url}{querystring}" class="inline-block">
