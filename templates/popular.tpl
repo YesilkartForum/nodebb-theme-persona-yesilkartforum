@@ -5,7 +5,7 @@
 	{{{end}}}
 </div>
 <div class="popular">
-	<div class="btn-toolbar">
+	<div class="topic-list-header btn-toolbar">
 		<div class="pull-left">
 			<!-- IF canPost -->
 			<!-- IMPORT partials/buttons/newTopic.tpl -->
