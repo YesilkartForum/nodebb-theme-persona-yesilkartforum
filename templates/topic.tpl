@@ -14,8 +14,8 @@
 					<span component="topic/labels">
 						<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="[[topic:pinned]]"></i>
 						<i component="topic/locked" class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->" title="[[topic:locked]]"></i>
-						<i class="fa fa-arrow-circle-right <!-- IF !oldCid -->hidden<!-- ENDIF !oldCid -->" title="[[topic:moved]]"></i>
-						{{{each icons}}}@value{{{end}}}
+						<i class="fa fa-arrow-circle-right <!-- IF !oldCid -->hidden<!-- ENDIF !oldCid -->" title="{{{ if privileges.isAdminOrMod }}}[[topic:moved-from, {oldCategory.name}]]{{{ else }}}[[topic:moved]]{{{ end }}}"></i>
+						{{{each icons}}}{@value}{{{end}}}
 					</span>
 					{title}
 				</span>
@@ -26,6 +26,7 @@
 					{{{ if category.icon }}}
 					<div role="presentation" class="icon pull-left" style="{{{ if category.bgColor }}}background-color: {category.bgColor};{{{end}}}; {{{ if category.color}}}color: {category.color};{{{end}}}">
 						<i class="fa fa-fw {category.icon}"></i>
+						
 					</div>
 					{{{ end }}}
 					<a href="{config.relative_path}/category/{category.slug}">{category.name}</a>
@@ -37,6 +38,8 @@
 				<div class="inline-block">
 					<!-- IMPORT partials/topic/stats.tpl -->
 				</div>
+				
+				{{{ if rssFeedUrl }}}<a target="_blank" href="{rssFeedUrl}"><i class="fa fa-rss-square"></i></a>{{{ end }}}
 
 				<!-- IMPORT partials/topic/browsing-users.tpl -->
 
